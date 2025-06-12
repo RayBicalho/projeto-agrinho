@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia no Setor Leiteiro do Paraná</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .stats-card {
+            transition: all 0.3s ease;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        .tech-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="hero-gradient text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-cow text-2xl"></i>
+                <span class="text-xl font-bold">Leite Paraná</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="hover:text-blue-200 transition">Início</a>
+                <a href="#tecnologias" class="hover:text-blue-200 transition">Tecnologias</a>
+                <a href="#beneficios" class="hover:text-blue-200 transition">Benefícios</a>
+                <a href="#dados" class="hover:text-blue-200 transition">Dados</a>
+                <a href="#contato" class="hover:text-blue-200 transition">Contato</a>
+            </div>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-20 left-20 w-40 h-40 rounded-full bg-white"></div>
+            <div class="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-white"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Tecnologia Transformando a Pecuária Leiteira no Paraná</h1>
+                    <p class="text-xl mb-8 text-blue-100">Inovação e eficiência para fortalecer o setor leiteiro paranaense</p>
+                    <a href="#tecnologias" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-100 transition inline-block">Conheça as tecnologias</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                    alt="Vacas em fazenda tecnológica" class="rounded-xl shadow-2xl border-4 border-white w-full max-w-md floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="stats-card bg-blue-50 p-8 rounded-xl text-center border-b-4 border-blue-500">
+                    <h3 class="text-5xl font-bold text-blue-800 mb-2">2°</h3>
+                    <p class="text-gray-600">Maior produtor de leite do Brasil</p>
+                </div>
+                <div class="stats-card bg-blue-50 p-8 rounded-xl text-center border-b-4 border-blue-500">
+                    <h3 class="text-5xl font-bold text-blue-800 mb-2">+13%</h3>
+                    <p class="text-gray-600">Crescimento na produtividade com tecnologia</p>
+                </div>
+                <div class="stats-card bg-blue-50 p-8 rounded-xl text-center border-b-4 border-blue-500">
+                    <h3 class="text-5xl font-bold text-blue-800 mb-2">5.2bi</h3>
+                    <p class="text-gray-600">Litros produzidos anualmente no estado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tecnologias" class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Tecnologias em Destaque</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Tech 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Ordenha Robotizada</h3>
+                    <p class="text-gray-600">Sistemas automatizados que realizam a ordenha sem intervenção humana, garantindo maior higiene e regularidade.</p>
+                </div>
+                
+                <!-- Tech 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Monitoramento Digital</h3>
+                    <p class="text-gray-600">Sensores e softwares que acompanham em tempo real a saúde, atividade e produção de cada animal.</p>
+                </div>
+                
+                <!-- Tech 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Melhoramento Genético</h3>
+                    <p class="text-gray-600">Técnicas avançadas de seleção e reprodução para animais mais produtivos e resistentes.</p>
+                </div>
+                
+                <!-- Tech 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Precisão na Alimentação</h3>
+                    <p class="text-gray-600">Sistemas de alimentação automatizados que calculam a dieta ideal para cada fase do animal.</p>
+                </div>
+                
+                <!-- Tech 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Gestão na Nuvem</h3>
+                    <p class="text-gray-600">Plataformas integradas para gerenciamento remoto de todas as operações da fazenda leiteira.</p>
+                </div>
+                
+                <!-- Tech 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="tech-icon text-blue-600 text-4xl mb-5">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Agricultura 4.0</h3>
+                    <p class="text-gray-600">Uso de drones e sensores para otimização do cultivo de alimentos para o gado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                    alt="Benefícios da tecnologia no leite" class="rounded-xl shadow-lg border-4 border-blue-100 w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Vantagens da Tecnologia no Setor</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-xl mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-blue-800 mb-1">Aumento de Produtividade</h3>
+                                <p class="text-gray-600">Tecnologias permitem aumento médio de 15-20% na produção leiteira por animal.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-xl mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-blue-800 mb-1">Qualidade do Leite</h3>
+                                <p class="text-gray-600">Controle rigoroso reduz contaminação e melhora padrões de qualidade.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-xl mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-blue-800 mb-1">Sustentabilidade</h3>
+                                <p class="text-gray-600">Redução do consumo de água, energia e insumos por litro de leite produzido.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-xl mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-blue-800 mb-1">Bem-estar Animal</h3>
+                                <p class="text-gray-600">Monitoramento contínuo garante melhores condições para os animais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="dados" class="py-20 bg-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O Paraná na Vanguarda</h2>
+                <p class="text-xl text-blue-200 max-w-3xl mx-auto">Dados que mostram como a tecnologia está transformando a pecuária leiteira no estado</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <div class="bg-blue-700 p-8 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">Adoção de Tecnologia por Região</h3>
+                    <div class="h-64 flex items-center justify-center">
+                        <div class="w-full bg-blue-600 rounded-full h-8 mb-4 relative">
+                            <div class="bg-blue-300 h-8 rounded-full" style="width: 78%">
+                                <span class="absolute right-0 -top-8">Norte Pioneiro - 78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-blue-200">O Norte Pioneiro lidera na adoção de tecnologias, seguido pela região de Guarapuava (72%) e Cascavel (65%).</p>
+                </div>
+                
+                <div class="bg-blue-700 p-8 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">Investimento em Inovação</h3>
+                    <div class="h-64 flex items-center justify-center">
+                        <svg width="300" height="300" viewBox="0 0 42 42" class="donut">
+                            <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1e3a8a" stroke-width="3"></circle>
+                            <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#93c5fd" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+                        </svg>
+                    </div>
+                    <p class="text-blue-200">40% das propriedades leiteiras já investem em ao menos uma tecnologia avançada para produção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-blue-50 rounded-xl shadow-md p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Entre em Contato</h2>
+                    <p class="text-gray-600 max-w-lg mx-auto">Tem interesse em implementar tecnologia em sua propriedade leiteira? Fale conosco!</p>
+                </div>
+                
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nome" class="block text-gray-700 mb-2">Nome</label>
+                        <input type="text" id="nome" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    </div>
+                    
+                    <div>
+                        <label for="telefone" class="block text-gray-700 mb-2">Telefone</label>
+                        <input type="tel" id="telefone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    </div>
+                    
+                    <div>
+                        <label for="cidade" class="block text-gray-700 mb-2">Cidade</label>
+                        <input type="text" id="cidade" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="mensagem" class="block text-gray-700 mb-2">Mensagem</label>
+                        <textarea id="mensagem" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"></textarea>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition w-full md:w-auto">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cow mr-2"></i> Leite Paraná
+                    </h3>
+                    <p class="text-blue-200">Promovendo a inovação tecnológica no setor leiteiro paranaense.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-300 hover:text-white transition">Programas de Incentivo</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition">Capacitação</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition">Financiamento</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition">Eventos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">Curitiba, PR</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">(41) 3320-0000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">contato@leiteparana.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-300 hover:text-white text-2xl transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-blue-300 hover:text-white text-2xl transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-blue-300 hover:text-white text-2xl transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-blue-300 hover:text-white text-2xl transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Leite Paraná - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('opacity-100', 'visible');
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile Menu Toggle (would need more implementation)
+        document.querySelector('header button').addEventListener('click', () => {
+            alert('Menu mobile seria implementado aqui');
+        });
+    </script>
+</body>
+</html>
